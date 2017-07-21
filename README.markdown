@@ -4,7 +4,7 @@ Search for tweets
 
 Installation
 ---------
-    git clone
+    git clone https://github.com/redgetan/twitleads.git
     npm install
     npm run sequelize db:migrate
 
