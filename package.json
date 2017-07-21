@@ -23,7 +23,8 @@
     "sequelize-cli": "^2.7.0"
   },
   "scripts": {
-    "sequelize": "sequelize"
+    "sequelize": "sequelize",
+    "start": "sequelize db:migrate && node app.js"
   },
   "author": "",
   "license": "ISC"
