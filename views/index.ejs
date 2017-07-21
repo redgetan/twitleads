@@ -1,0 +1,28 @@
+<% user = typeof user !== "undefined" ? user : {} %>
+
+<div id='home_header'>TwitLeads</div>
+<div id='home_header_description'>Search for a tweet</div>
+<br>
+<form id="signup_form" action="/signup" method="post">
+    <div class='form_section'>
+        <label>Email:</label>
+        <input type="text" name="email" value="<%= user.email %>"/>
+    </div>
+    <div class='form_section'>
+        <label>Username:</label>
+        <input type="text" name="username" value="<%= user.username %>"/>
+    </div>
+    <div class='form_section'>
+        <label>Password:</label>
+        <input type="password" name="password" value="<%= user.password %>"/>
+    </div>
+    <br>
+    <div>
+        <input class='submit_btn' type="submit" value="Sign Up"/>
+    </div>
+    <br>
+    <div class='form_extra_container'>
+        <a href='/login' style=''>login</a>
+    </div>
+
+</form>

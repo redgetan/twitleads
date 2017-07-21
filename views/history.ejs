@@ -1,0 +1,15 @@
+<div id='home_header'>TwitLeads</div>
+
+<a href="/dashboard">Dashboard</a> | <a href="/history">History</a> | <a class="logout_btn" href="/logout">Logout</a>
+
+<br>
+<br>
+<% for (var i = 0; i < histories.length; i++) { %>
+    <div class='history_item'>
+        <span class='history_item_search_term'><%= histories[i].search %></span>
+        - 
+        <span class='history_item_created_at'><%= histories[i].createdAt %></span>
+    </div>
+<% } %>
+
+
